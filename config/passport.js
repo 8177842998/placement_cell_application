@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const passport = require("passport");
 const User = require("../models/user");
 const LocalStratergy = require("passport-local").Strategy;
@@ -71,7 +71,7 @@ passport.setAuthenticatedUser = function (req, res, next) {
   next();
 };
 
-=======
+
 const passport = require("passport");
 const User = require("../models/user");
 const LocalStratergy = require("passport-local").Strategy;
@@ -144,5 +144,4 @@ passport.setAuthenticatedUser = function (req, res, next) {
   next();
 };
 
->>>>>>> 833b6f12c5ba070e3037a960533adea02ad5f620
 module.exports = passport;
