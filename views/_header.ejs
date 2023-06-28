@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <style>
     body{
       background-color: wheat;
@@ -42,4 +43,50 @@
         </form>
       </div>
     </nav>
+=======
+<style>
+    body{
+      background-color: wheat;
+      height: 120vh;
+    }
+    .parent-container{
+      background-color:  #0f7e89;
+      box-shadow: 3px 0px 5px 1px black ;
+      border-radius: 15px;
+      
+    }
+    .parent-container:hover{
+      box-shadow: inset 1px 1px 2px 3px white;
+    }
+   
+    h1{
+      color: white;
+    }
+    .clr{
+      color: white;
+    }
+  </style>
+  
+  <header class="parent-container">
+    <nav class="navbar parent-container">
+      <div class="container-fluid">
+        <a class="navbar-brand clr" href="/">Placement Cell</a>
+        <% if(locals.user) { %>
+        <a class=" clr navbar-brand" href="/profile"
+          >Hello <%= locals.user.username%></a
+        >
+        <%}%>
+  
+        <form class="clr d-flex">
+          <a class="clr navbar-brand" href="/dashboard">Dashboard</a>
+          <a class="clr navbar-brand" href="/student/add-student">Add new Student</a>
+          <a class="clr navbar-brand" href="/interview/add-interview"
+            >Add Interview</a
+          >
+          <a class="clr navbar-brand" href="/download">Report</a>
+          <a class="clr navbar-brand" href="/sign-out">Signout</a>
+        </form>
+      </div>
+    </nav>
+>>>>>>> 833b6f12c5ba070e3037a960533adea02ad5f620
   </header>
